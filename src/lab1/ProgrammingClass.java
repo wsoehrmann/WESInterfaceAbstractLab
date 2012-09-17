@@ -4,21 +4,28 @@
  */
 package lab1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author wsoehrmann
  */
 public abstract class ProgrammingClass {
+
+    // These variables are used in all the classes therefore they can by
+    //put in a abstract class
     private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
+    private double MIN_CREDITS = .5;
+    private double MAX_CREDITS = 4.0;
 
     public String getCourseName() {
         return courseName;
     }
 
-    public void setCourseName(String courseName) {
+    public final void setCourseName(String courseName) {
         this.courseName = courseName;
     }
 
@@ -26,7 +33,12 @@ public abstract class ProgrammingClass {
         return courseNumber;
     }
 
-    public void setCourseNumber(String courseNumber) {
+    public final void setCourseNumber(String courseNumber) {
+        if (courseNumber == null || courseNumber.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: courseNumber cannot be null of empty string");
+            System.exit(0);
+        }
         this.courseNumber = courseNumber;
     }
 
@@ -34,7 +46,12 @@ public abstract class ProgrammingClass {
         return credits;
     }
 
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
+        if (credits < MIN_CREDITS || credits > MAX_CREDITS) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: credits must be in the range 0.5 to 4.0");
+            System.exit(0);
+        }
         this.credits = credits;
     }
 
@@ -43,9 +60,11 @@ public abstract class ProgrammingClass {
     }
 
     public void setPrerequisites(String prerequisites) {
+        if (prerequisites == null || prerequisites.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: prerequisites cannot be null of empty string");
+            System.exit(0);
+        }
         this.prerequisites = prerequisites;
     }
-    
-    
-    
 }
