@@ -20,6 +20,21 @@ public abstract class Programming {
     private String prerequisites;
     private double MIN_CREDITS = .5;
     private double MAX_CREDITS = 4.0;
+    
+    /**
+     *
+     */
+    public void courseName(){
+        System.out.println("Enter course Name");
+    }
+    public void credits(){
+        
+    }
+    public void courseNumber(){
+    }
+    public void prerequisites(){
+        
+    }
 
     public String getCourseName() {
         return courseName;
