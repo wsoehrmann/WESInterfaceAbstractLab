@@ -11,21 +11,21 @@ package lab1;
 public class StartUp {
 
     public static void main(String[] args) {
-        AdvancedJavaCourse javaCourse = new AdvancedJavaCourse();
-        javaCourse.courseName();
-        javaCourse.credits();
-        javaCourse.courseNumber();
-        javaCourse.prerequisites();
-        IntroJavaCourse introJavaCourse = new IntroJavaCourse();
-        introJavaCourse.courseName();
-        introJavaCourse.credits();
-        introJavaCourse.courseNumber();
-        introJavaCourse.prerequisites();
-        IntroToProgrammingCourse introProgrammingCourse = new 
+        AdvancedJavaCourse aj = new AdvancedJavaCourse();
+         aj.setCourseName("AdvancedJavaCourse");
+         aj.setCredits(4);
+         aj.setCourseNumber("4532343");
+         aj.setPrerequisites("IntroJavaCourse");
+        IntroJavaCourse ij = new IntroJavaCourse();
+         aj.setCourseName("IntroJavaCourse");
+         ij.setCredits(4);
+         ij.setCourseNumber("49599");
+        ij.setPrerequisites("IntroToProgramming");
+        IntroToProgrammingCourse ip = new 
                 IntroToProgrammingCourse();
-        introProgrammingCourse.courseName();
-        introProgrammingCourse.credits();
-        introProgrammingCourse.courseNumber();
-        introProgrammingCourse.prerequisites();
+        ip.setCourseName("IntroToProgramming");
+        ip.setCredits(4);
+        ip.setCourseNumber("5949494");
+        ip.setPrerequisites("none");
     }
 }

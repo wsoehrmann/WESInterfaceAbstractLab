@@ -7,7 +7,7 @@ package lab1;
  * @author Wesley E Soehrmann
  * @version 1.00
  */
-public class IntroToProgrammingCourse extends Programming {
+public class IntroToProgrammingCourse extends ProgrammingCourse {
     
     private String prerequisites;
     
@@ -21,6 +21,8 @@ public class IntroToProgrammingCourse extends Programming {
     public void setPrerequisites(String prerequisites) {
         System.out.println("There are no prerequisites to this class");
         }
+   
+}
         
-    }
+    
 
