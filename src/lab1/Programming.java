@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  *
  * @author wsoehrmann
  */
-public abstract class ProgrammingClass {
+public abstract class Programming {
 
     // These variables are used in all the classes therefore they can by
     //put in a abstract class

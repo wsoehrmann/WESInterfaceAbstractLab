@@ -2,12 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab2;
+package lab3;
 
 /**
  *
  * @author Wesley
  */
-public interface ProgrammingClass {
+public class Springfield {
     
 }

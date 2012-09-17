@@ -1,7 +1,7 @@
 
 Objectives for Lab #3:
 ---------------------
-   * Practice using both an interfce and an abstract class as super classes
+   * Practice using both an interface and an abstract class as super classes
      for sub classes of your choosing (invent something, but don't use
      anything previously used in class). Typically this would be structured
      as Interface <- Abstract <- sub-class
@@ -20,7 +20,7 @@ Instructions for Lab #2:
    and use camel case thereafter and do not include verbs in the name; methods
    just have a verb in the name (action terms) and must begin with a lower case
    letter and camel case thereafter. If a method returns a value the name 
-   should suggest somethig is coming back; if not, words like "get" would be
+   should suggest something is coming back; if not, words like "get" would be
    inappropriate.
 5. Provide a printed UML diagram of your code. Suggest you use LucidChart to
    create your diagrams (you should have received an invitation by email to
